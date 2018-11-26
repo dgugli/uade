@@ -9,6 +9,8 @@ import javax.swing.JFrame;
 import java.awt.Font;
 import javax.swing.JButton;
 import javax.swing.JList;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 public class Abm extends JFrame {
 	public JTextField txtBuscar;
@@ -24,7 +26,7 @@ public class Abm extends JFrame {
 		getContentPane().setLayout(null);
 		
 		panel = new JPanel();
-		panel.setBounds(0, 0, 381, 314);
+		panel.setBounds(0, 0, 377, 322);
 		getContentPane().add(panel);
 		panel.setLayout(null);
 
@@ -47,19 +49,19 @@ public class Abm extends JFrame {
 		panel.add(lblBuscarCliente);
 
 		JLabel lblBuscarPor = new JLabel("Buscar Por:");
-		lblBuscarPor.setBounds(245, 41, 79, 14);
+		lblBuscarPor.setBounds(246, 41, 79, 14);
 		panel.add(lblBuscarPor);
 
 		cmbBuscarFiltro = new JComboBox();
-		cmbBuscarFiltro.setBounds(246, 56, 118, 20);
+		cmbBuscarFiltro.setBounds(247, 56, 79, 20);
 		panel.add(cmbBuscarFiltro);
 
 		btnNuevo = new JButton("Nuevo");
-		btnNuevo.setBounds(88, 277, 89, 23);
+		btnNuevo.setBounds(92, 288, 89, 23);
 		panel.add(btnNuevo);
 
 		btnCerrar = new JButton("Cerrar");
-		btnCerrar.setBounds(205, 277, 89, 23);
+		btnCerrar.setBounds(208, 288, 89, 23);
 		panel.add(btnCerrar);
 
 		btnVerDatos = new JButton("Ver Datos");

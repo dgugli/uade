@@ -4,6 +4,9 @@ import javax.swing.JPanel;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.SwingConstants;
+
+import model.Cliente;
+
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -15,6 +18,7 @@ public class vDatosCliente extends JFrame {
 	public JTextField txtDireccion;
 	public JButton btnGuardar;
 	public JButton btnCerrar;
+	public Cliente cliente;
 	
 	public vDatosCliente() {
 		getContentPane().setLayout(null);
