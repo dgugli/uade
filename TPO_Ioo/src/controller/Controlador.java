@@ -2,7 +2,6 @@ package controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.ArrayList;
@@ -22,8 +21,6 @@ public class Controlador implements ActionListener, KeyListener {
 	DefaultListModel listModel = null;
 	List<Cliente> clientes;
 	int maxID;
-	
-	// estamos re locosss
 
 	public Controlador(Cliente cliente, Abm abm) {
 		this.cliente = cliente;
