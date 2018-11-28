@@ -23,7 +23,7 @@ public class Controlador implements ActionListener, KeyListener {
 	List<Cliente> clientes;
 	int maxID;
 	
-	// HOLA MARIAN
+	// estamos re locosss
 
 	public Controlador(Cliente cliente, Abm abm) {
 		this.cliente = cliente;
