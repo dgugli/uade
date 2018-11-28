@@ -79,6 +79,10 @@ public class Controlador implements ActionListener, KeyListener {
 		this.vDatosCli.setBounds(0, 0, 316, 258);
 		this.vDatosCli.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.vDatosCli.setLocationRelativeTo(null);
+		this.vDatosCli.txtNombre.setText("");
+		this.vDatosCli.txtApellido.setText("");
+		this.vDatosCli.txtDni.setText("");
+		this.vDatosCli.txtDireccion.setText("");
 		this.vDatosCli.setVisible(true);
 	}
 
@@ -86,6 +90,10 @@ public class Controlador implements ActionListener, KeyListener {
 		this.vDatosCli.setTitle("Datos Cliente");
 		this.vDatosCli.pack();
 		this.vDatosCli.cliente = cli;
+		this.vDatosCli.txtNombre.setText(cli.getNombre());
+		this.vDatosCli.txtApellido.setText(cli.getApellido());
+		this.vDatosCli.txtDni.setText(cli.getDni());
+		this.vDatosCli.txtDireccion.setText(cli.getDireccion());
 		this.vDatosCli.setBounds(0, 0, 316, 258);
 		this.vDatosCli.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.vDatosCli.setLocationRelativeTo(null);
@@ -204,6 +212,7 @@ public class Controlador implements ActionListener, KeyListener {
 					nuevo.setNombre(vDatosCli.txtNombre.getText());
 					nuevo.setApellido(vDatosCli.txtApellido.getText());
 					nuevo.setDni(vDatosCli.txtDni.getText());
+					nuevo.setDireccion(vDatosCli.txtDireccion.getText());
 					try {
 						clientes.add(nuevo);
 						maxID++;
