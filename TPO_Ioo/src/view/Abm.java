@@ -26,7 +26,7 @@ public class Abm extends JFrame {
 		getContentPane().setLayout(null);
 		
 		panel = new JPanel();
-		panel.setBounds(0, 0, 377, 322);
+		panel.setBounds(0, 0, 380, 322);
 		getContentPane().add(panel);
 		panel.setLayout(null);
 

@@ -22,6 +22,8 @@ public class Controlador implements ActionListener, KeyListener {
 	DefaultListModel listModel = null;
 	List<Cliente> clientes;
 	int maxID;
+	
+	// HOLA MARIAN
 
 	public Controlador(Cliente cliente, Abm abm) {
 		this.cliente = cliente;
@@ -45,7 +47,7 @@ public class Controlador implements ActionListener, KeyListener {
 	public void IniciarVista() {
 		this.abm.setTitle("ABM Clientes");
 		this.abm.pack();
-		this.abm.setBounds(0, 0, 389, 387);
+		this.abm.setBounds(0,0, 389, 387);
 		this.abm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.abm.setLocationRelativeTo(null);
 		this.abm.setVisible(true);
@@ -69,7 +71,7 @@ public class Controlador implements ActionListener, KeyListener {
 		this.abm.lstClientes.setModel(listabuscar);
 		this.abm.lstClientes.repaint();
 	}
-	
+
 	public void abrirDatosCli() {
 		this.vDatosCli.setTitle("Datos Cliente");
 		this.vDatosCli.pack();

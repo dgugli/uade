@@ -21,8 +21,9 @@ public class Inicio {
 			  }
 			  catch (IllegalAccessException e) {
 			  }
-		Cliente cliente = new Cliente();
-		Abm abm = new Abm();
+		
+		Cliente cliente = new Cliente(); // Modelo
+		Abm abm = new Abm(); // vista
 		Controlador controlador = new Controlador(cliente,abm);
 		controlador.IniciarVista();
 
